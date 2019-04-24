@@ -1,3 +1,6 @@
+@import url('https://unpkg.com/purecss@1.0.0/build/pure-min.css');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
 .App {
   text-align: center;
 }
@@ -8,7 +11,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #705772;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

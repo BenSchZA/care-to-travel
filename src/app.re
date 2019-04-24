@@ -8,14 +8,21 @@ let make = (~message, _children) => {
   ...component,
   render: _self =>
     <div className="App">
-      <div className="App-header">
+      <Menu/>
+      <div className="App-header">  
         <img src=logo className="App-logo" alt="logo" />
         <h2> (ReasonReact.string(message)) </h2>
+        <ScrollDown/>
       </div>
-      <p className="App-intro">
-        (ReasonReact.string("To get started, edit"))
-        <code> (ReasonReact.string(" src/app.re ")) </code>
-        (ReasonReact.string("and save to reload."))
+      <p className="App-intro" id="sign-up">
+        (ReasonReact.string("Sign up and select a travel package"))
       </p>
+      <Packages>
+        <Package destination="Cape Town" tagLine="Trip of a lifetime" description="Text..." footerText="Footer text..."/>
+        <Package destination="Rome" tagLine="Trip of a lifetime" description="Text..." footerText="Footer text..."/>
+        <Package destination="London" tagLine="Trip of a lifetime" description="Text..." footerText="Footer text..."/>
+      </Packages>
+      <Footer/>
+      /* <Tea/> */
     </div>,
 };
