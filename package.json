@@ -6,13 +6,15 @@
     "bs-css": "^8.0.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "reason-apollo": "^0.15.2",
     "reason-scripts": "1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "introspect": "yarn send-introspection-query https://care-to-travel-bf8357556e.herokuapp.com/CareToTravel/dev"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,7 +29,8 @@
     "@glennsl/bs-jest": "^0.4.8",
     "bs-fetch": "^0.3.1",
     "bs-platform": "^5.0.3",
-    "reason-react": "^0.7.0",
-    "bucklescript-tea": "^0.11.2"
+    "bucklescript-tea": "^0.11.2",
+    "graphql_ppx": "^0.2.8",
+    "reason-react": "^0.7.0"
   }
 }

@@ -21,7 +21,7 @@ module Styles = {
 
 let component = ReasonReact.reducerComponent("Card");
 
-let make = (~destination, ~tagLine, ~description, ~footerText, _children) => {
+let make = (~destination, ~tagLine, ~description, ~image: string, ~footerText, _children) => {
   ...component,
 
   initialState: () => {selected: false},
@@ -35,7 +35,7 @@ let make = (~destination, ~tagLine, ~description, ~footerText, _children) => {
   render: _self =>
   <div onClick=(_event => _self.send(Toggle)) className={Styles.card(_self.state.selected) ++ " card border-secondary mb-3"}>
     <h5 className="card-header">{destination->ReasonReact.string}</h5>
-    <img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Africa/South%20Africa/Cape%20Town/cape-town-guides-lead.jpg?imwidth=450" className="card-img-top" alt="..."/>
+    <img src=image className="card-img-top" alt="..."/>
     <div className={Styles.cardBody(_self.state.selected) ++ " card-body"}>
       <h5 className="card-title">{tagLine->ReasonReact.string}</h5>
       <p className="card-text">{description->ReasonReact.string}</p>

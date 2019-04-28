@@ -10,8 +10,6 @@ let make = _children => {
                 <a href="#" id="menuLink1" className="pure-menu-link">"Contact"->ReasonReact.string</a>
                 <ul className="pure-menu-children">
                     <li className="pure-menu-item"><a href="#" className="pure-menu-link">"Email"->ReasonReact.string</a></li>
-                    <li className="pure-menu-item"><a href="#" className="pure-menu-link">"Twitter"->ReasonReact.string</a></li>
-                    <li className="pure-menu-item"><a href="#" className="pure-menu-link">"Tumblr Blog"->ReasonReact.string</a></li>
                 </ul>
             </li>
         </ul>
