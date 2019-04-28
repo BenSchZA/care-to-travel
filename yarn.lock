@@ -9085,6 +9085,18 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+re-debouncer@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/re-debouncer/-/re-debouncer-2.0.0.tgz#598bd7bc45fa38216c4d2652143c46cdc3334aa1"
+  integrity sha512-DGgIldcw6Fy7IJOqQnWcTUndlkldr0Q3UKFEKcPZh3sK7SDk1o8bY5Pf1omkpeX5TjfMz1oXReQF90ZddGcnFw==
+
+re-formality@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/re-formality/-/re-formality-2.0.0.tgz#240ce0cfacb993ae4e2ef8f1496bbf5d21e683e7"
+  integrity sha512-M5+m6obE6j0dgYvRHSfNbKt/niXRO0X7DlyKIq/NADD5yCUqKes3oKlH6e1gbQwc6/2HcvD5S9OZR+QX88J6QA==
+  dependencies:
+    re-debouncer "2.0.0"
+
 react-apollo@2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-2.3.2.tgz#b8e287d2813722b9e0a886cabf8149ab3b84a3b7"

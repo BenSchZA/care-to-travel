@@ -1,3 +1,5 @@
+let copy = [%raw {|'\u00a9'|}];
+
 let component = ReasonReact.statelessComponent("Footer");
 
 module Styles = {
@@ -12,7 +14,7 @@ let make = _children => {
   ...component,
   render: _self => (
     <footer className=Styles.footer>
-      <p>"Copyright 2019 'Care to Travel'"->ReasonReact.string</p>
+      <p>{copy} " 2019 Care to Travel"->ReasonReact.string</p>
     </footer>
   )
 }

@@ -10,7 +10,8 @@
     "bs-fetch",
     "bs-css",
     "bucklescript-tea",
-    "reason-apollo"
+    "reason-apollo",
+    "re-formality"
   ],
   "ppx-flags": [
     "graphql_ppx/ppx"

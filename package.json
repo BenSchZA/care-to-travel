@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bs-css": "^8.0.4",
+    "re-formality": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "reason-apollo": "^0.15.2",

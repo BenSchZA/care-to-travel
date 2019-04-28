@@ -7,7 +7,7 @@ external unregister_service_worker : unit => unit = "unregister";
 
 ReactDOMRe.renderToElementWithId(
   <ReasonApollo.Provider client=Client.instance>
-  <App message="Welcome to Care to Travel" />
+    <App />
   </ReasonApollo.Provider>,
   "root",
 );
