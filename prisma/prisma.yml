@@ -1,0 +1,6 @@
+endpoint: https://care-to-travel-bf8357556e.herokuapp.com/CareToTravel/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: javascript-client
+    output: ./generated/prisma-client/

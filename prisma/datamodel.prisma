@@ -1,0 +1,13 @@
+type User {
+  id: ID! @unique
+  name: String!
+}
+
+type Package {
+  id: ID! @unique
+  destination: String!
+  tagLine: String
+  description: String
+  image: String
+  footerText: String
+}
