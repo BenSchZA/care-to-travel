@@ -9,20 +9,27 @@ let make = (~message, _children) => {
   render: _self =>
     <div className="App">
       <Menu/>
-      <div className="App-header">  
-        <img src=logo className="App-logo" alt="logo" />
-        <h2> (ReasonReact.string(message)) </h2>
-        <ScrollDown/>
+      <div className="App-header">
+        /* <img src=logo className="App-logo" alt="logo" /> */
+        <div className="App-content">
+          <h4 className="display-4">(ReasonReact.string(message))</h4>
+          <Quote/>
+          <ScrollDown/>
+        </div>
       </div>
-      <p className="App-intro" id="sign-up">
-        (ReasonReact.string("Sign up and select a travel package"))
-      </p>
-      <Packages>
-        <Package destination="Cape Town" tagLine="Trip of a lifetime" description="Text..." footerText="Footer text..."/>
-        <Package destination="Rome" tagLine="Trip of a lifetime" description="Text..." footerText="Footer text..."/>
-        <Package destination="London" tagLine="Trip of a lifetime" description="Text..." footerText="Footer text..."/>
-      </Packages>
-      <Footer/>
+      <div className="App-section">
+        <p className="h4" id="sign-up">
+          (ReasonReact.string("Sign up and select a travel package"))
+        </p>
+        <Packages>
+          <Package destination="Cape Town" tagLine="Trip of a lifetime" description="Text..." footerText="Footer text..."/>
+          <Package destination="Rome" tagLine="Trip of a lifetime" description="Text..." footerText="Footer text..."/>
+          <Package destination="London" tagLine="Trip of a lifetime" description="Text..." footerText="Footer text..."/>
+        </Packages>
+      </div>
+      <div className="App-footer">
+        <Footer/>
+      </div>
       /* <Tea/> */
     </div>,
 };

@@ -11,18 +11,46 @@
 }
 
 .App-header {
-  background-color: #705772;
+  background-color: #f5f6f7;
+  /* background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%); */
+  background-image: url("static/marten-bjork-474032-unsplash.jpg");
+  background-position: center center;
+  background-size: 100% auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #1f2667;
+  border-top: 1px solid #DFE1E6;
+}
+
+.App-footer {
+  position: relative;
+  background: #fff;
+  border-top: 1px solid #DFE1E6;
+  padding: 10px 0 10px;
+  overflow: hidden;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.App-content {
+  background: #fff;
+  padding: 2em 1.5em 1em;
+  margin-top: 3em;
+  border: 1px solid #DFE1E6;
+  border-radius: 4px;
+}
+
+.App-section {
+  background-color: #f5f6f7;
+  /* margin-top: 3em; */
+  padding-top: 3em;
+  border-top: 1px solid #DFE1E6;
 }
 
 @keyframes App-logo-spin {
@@ -32,4 +60,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card {
+	position: relative;
+	display: block;
+	background: #fff;
+	height: 380px;
+	padding: 0 0;
+	margin: 0 2em 2em;
+	border-radius: 4px;
+	border: 1px solid #DFE1E6;
+	color: #1F2667;
+	text-decoration: none;
+	overflow: hidden;
+	-webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+  margin: 0 0 2em;
+}
+
+a:active, a:hover {
+	outline: 0;
+}
+
+.card:hover {
+	-webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+	-webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+	box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }

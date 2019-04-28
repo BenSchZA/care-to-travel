@@ -5,7 +5,6 @@ module Styles = {
 
   let footer = style([
     padding(px(2)),
-    backgroundColor(lightgrey)
   ])
 }
 
