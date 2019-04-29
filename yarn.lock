@@ -9085,6 +9085,11 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+re-classnames@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/re-classnames/-/re-classnames-4.0.0.tgz#11c62c5f3f8696c20689fdc6b70cdbea9e3496ef"
+  integrity sha512-uYtBCGfSHlNiAKg1nWRnZMWKTaFOHFPmUdygf7j9/bqjh2bTkl5f/8oxSocZriNnCcmdc1JD9YbVSI91lYvONA==
+
 re-debouncer@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/re-debouncer/-/re-debouncer-2.0.0.tgz#598bd7bc45fa38216c4d2652143c46cdc3334aa1"

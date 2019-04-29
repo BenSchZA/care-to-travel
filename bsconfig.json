@@ -11,7 +11,8 @@
     "bs-css",
     "bucklescript-tea",
     "reason-apollo",
-    "re-formality"
+    "re-formality",
+    "re-classnames"
   ],
   "ppx-flags": [
     "graphql_ppx/ppx"
