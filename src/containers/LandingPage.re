@@ -1,5 +1,3 @@
-open Belt.Option;
-
 let component = ReasonReact.statelessComponent("SignUpPage");
 
 let make = _children => {
@@ -9,6 +7,7 @@ let make = _children => {
       <div className="App-content">
         <h4 className="display-4">(ReasonReact.string("Welcome to Care to Travel"))</h4>
         <Quote/>
+        <Tea />
         <ScrollDown/>
       </div>
     </div>

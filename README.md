@@ -1,3 +1,13 @@
+# Project
+
+## Dependancies
+
+1. Ensure `bs-platform` installed via NPM with same OCaml build version as `reason-language-server`, or use `npm link --dev bsb`
+2. `reason-language-server` should be built locally and set in config for `vscode-reason` IDE plugin: `$WORKSPACE/reason-language-server/bin.exe`
+3. To install `esy` on NixOS for building `reason-language-server`, you'll need a shell environment
+
+# Bootstrap
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

@@ -20,10 +20,14 @@
   "reason": {
     "react-jsx": 2
   },
+  "namespace": true,
   "refmt": 3,
   "package-specs": {
     "module": "commonjs",
     "in-source": true
   },
-  "suffix": ".bs.js"
+  "suffix": ".bs.js",
+  "warnings": {
+    "error": "+101"
+  }
 }
