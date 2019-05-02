@@ -1,12 +1,7 @@
 open Belt.Option;
 
-let component = ReasonReact.statelessComponent("SignUpPage");
-
-[@bs.module] external capeTown : string = "../static/cape-town.jpg";
-[@bs.module] external london : string = "../static/london.jpg";
-[@bs.module] external rome : string = "../static/rome.jpg";
-
 type package = {
+  .
   id: string,
   destination: string,
   tagLine: option(string),
@@ -29,9 +24,31 @@ module GetPackages = [%graphql {|
     }
   }
 |}];
+
 module GetPackagesQuery = ReasonApollo.CreateQuery(GetPackages);
+
+/* State declaration */
+type state = {
+  selectedPackageId: string,
+};
+
+/* Action declaration */
+type action =
+  | SelectPackage(string);
+
+let component = ReasonReact.reducerComponent("SignUpPage");
+
 let make = _children => {
   ...component,
+  
+  initialState: () => {selectedPackageId: ""},
+
+  /* State transitions */
+  reducer: (action, state) =>
+    switch (action) {
+    | SelectPackage(id) => ReasonReact.Update({selectedPackageId: id})
+    },
+
   render: _self =>
     <div className="App-section">
       <p className="h4" id="sign-up">
@@ -53,7 +70,6 @@ let make = _children => {
           <div className="col-12">
             <Packages>
               {
-                let packagesQuery = GetPackages.make();
                 <GetPackagesQuery>
                   ...{
                     ({result}) =>
@@ -66,7 +82,16 @@ let make = _children => {
                         |. Belt.Array.keepMap(package => package)
                         /* Map array to DOM elements */
                         |> Array.map(package => {
-                          <Package key=package##id destination=package##destination tagLine="Trip of a lifetime" description="Text..." image=capeTown footerText="Footer text..."/>
+                          <Package
+                            key=package##id
+                            onSelect=(() => {_self.send(SelectPackage(package##id))})
+                            selected=(_self.state.selectedPackageId == package##id)
+                            destination=package##destination
+                            tagLine=getWithDefault(package##tagLine, "")
+                            description=getWithDefault(package##description, "")
+                            image=getWithDefault(package##image, "")
+                            footerText=getWithDefault(package##footerText, "")
+                            />
                         })
                         /* Display array of elements */
                         |> ReasonReact.array;

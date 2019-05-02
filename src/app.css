@@ -5,15 +5,22 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.globe {
+  animation: spin infinite 20s linear;
   height: 40vmin;
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(static/world.svg);
+  background-size: 150px 150px;
 }
 
 .App-header {
   background-color: #f5f6f7;
   /* background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%); */
-  background-image: url("static/marten-bjork-474032-unsplash.jpg");
+  background-image: url("https://i.imgur.com/9U1w5wx.jpg?1");
   background-position: center center;
   background-size: 100% auto;
   min-height: 100vh;
@@ -53,12 +60,12 @@
   border-top: 1px solid #DFE1E6;
 }
 
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -77,6 +84,10 @@
 	-webkit-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
   margin: 0 0 2em;
+  -webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+	-webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+	box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
 a:active, a:hover {
@@ -84,8 +95,8 @@ a:active, a:hover {
 }
 
 .card:hover {
-	-webkit-transform: translateY(-1px);
-	transform: translateY(-1px);
+	-webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
 	-webkit-box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 	box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
