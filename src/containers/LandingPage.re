@@ -1,6 +1,3 @@
-[@bs.module] external imageLeft: string = "../static/marten-bjork-474032-unsplash.jpg";
-[@bs.module] external imageRight: string = "../static/cape-town.jpg";
-
 let component = React.statelessComponent("SignUpPage");
 
 module Styles = {
@@ -33,7 +30,7 @@ let make = _children => {
         <div className="row">
           <div className="col align-self-start">
             <div className=(Styles.imageDivLeft ++ " shadow p-3 mb-5 bg-white rounded")>
-              <img className=Styles.image src=imageLeft />
+              <img className=Styles.image src="https://i.imgur.com/9U1w5wx.jpg?1" />
             </div>
           </div>
           <div className="col align-self-center">
@@ -49,7 +46,7 @@ let make = _children => {
           </div>
           <div className="col align-self-end">
             <div className=(Styles.imageDivRight ++ " shadow p-3 mb-5 bg-white rounded")>
-              <img className=Styles.image src=imageRight />
+              <img className=Styles.image src="https://i.imgur.com/uZUUsRZ.jpg?1" />
             </div>
           </div>
         </div>

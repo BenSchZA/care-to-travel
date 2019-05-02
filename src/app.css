@@ -13,7 +13,8 @@
   height: 150px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background: url(static/world.svg);
   background-size: 150px 150px;
 }
