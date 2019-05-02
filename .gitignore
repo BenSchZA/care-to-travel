@@ -8,6 +8,7 @@
 
 # production
 /build
+/dist
 
 # bucklescript
 /lib
@@ -28,3 +29,4 @@ yarn-error.log*
 
 .netlify/
 .graphql_ppx_cache/
+.cache/
