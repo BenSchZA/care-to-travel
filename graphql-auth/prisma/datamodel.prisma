@@ -1,13 +1,19 @@
 type User {
   id: ID! @unique
+  email: String! @unique
+  password: String!
   name: String!
+  votes: [Package!]!
 }
 
 type Package {
   id: ID! @unique
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
   destination: String!
   tagLine: String
   description: String
   image: String
   footerText: String
+  votes: Int
 }
