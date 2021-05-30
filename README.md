@@ -1,4 +1,4 @@
-# Care to Travel Webpage
+# Care to Travel Website
 
 ![screenshot](screenshot.png)
 
