@@ -1,4 +1,6 @@
-# Project
+# Care to Travel Webpage
+
+![screenshot](screenshot.png)
 
 ## Dependancies
 
